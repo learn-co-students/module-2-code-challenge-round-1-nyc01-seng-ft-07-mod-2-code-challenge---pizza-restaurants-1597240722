@@ -11,7 +11,8 @@ class RestaurantPizzasController < ApplicationController
         else
             flash[:my_errors] = @restaurant_pizza.errors.full_messages
             redirect_to new_restaurant_pizza_path
-    end
+        end
+     end
 
     private
 
