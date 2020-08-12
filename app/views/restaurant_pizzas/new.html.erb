@@ -1,0 +1,7 @@
+<%= form_for @restaurant_pizza do |f| %>
+    <%= f.label :pizza %>
+    <%= f.collection_select :pizza_id, Pizza.all, :id, :name %>
+    <%= f.label :restaurant %>
+    <%= f.collection_select :restaurant_id, Restaurant.all, :id, :name %>
+    <%= f.submit %>
+    <% end%>
