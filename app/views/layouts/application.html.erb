@@ -12,7 +12,8 @@
     <div class='container'>
       <p align="center"><%= image_tag "prisoners_pizza.png", class: "pizza_logo"%></p>
       <h1 align='center' style='font-size:3rem;color:#d12b15'>The Flatiron Pizza Society</h1>
-      <%= yield %>
+      <%= yield %><br>
+      <%= link_to "Home Directory", restaurants_path %>
     </div>
   </body>
 </html>
