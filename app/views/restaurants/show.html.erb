@@ -1,8 +1,8 @@
 <h1>Restaurant Page</h1>
 
 <%= @restaurant.name %><br>
-<%= @restaurant.address %>
-
+<%= @restaurant.address %><br>
+<p>Average Pizza Price: <%= @restaurant.get_average_price %><br></p>
 <ul>
     <% @restaurant.pizzas.each do |pizza| %>
         <li><%= link_to pizza.name, pizza_path(pizza) %></li>
