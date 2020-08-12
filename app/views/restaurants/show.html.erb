@@ -1,0 +1,16 @@
+<h1 style='margin-top:100px;font-size:2rem'>Official Restaurant Page</h1>
+
+
+<h1 style='font-size:1.5rem;margin-top:50px'>Restaurant Name:
+      <%= @restaurant.name %>
+  </h1>
+  <p>Address: <%= @restaurant.address %></p>
+
+  <h3 style='font-size:1.5rem;margin-top:50px'>List of Pizza's Sold</h3>
+
+  <ul>
+    <% @restaurant.pizzas.each do |pizza|%>
+    <li><%= link_to pizza.name, pizza_path(pizza) %></li>
+    <br>
+    <%end%>
+  </ul>

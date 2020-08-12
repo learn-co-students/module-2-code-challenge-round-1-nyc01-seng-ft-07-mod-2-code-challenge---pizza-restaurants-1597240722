@@ -1,0 +1,22 @@
+<h1 style='margin-top:100px;font-size:2rem'>New Pizza Form</h1>
+
+<% if flash[:my_errors] %>
+  <% flash[:my_errors].each do |error| %>
+  <%= error %><br>
+  <%end%>
+<%end%>
+
+<%= form_for @restaurant_pizza do |f|%>
+<br>
+<%= f.label :restaurant %>
+<%= f.collection_select :restaurant_id, @restaurants, :id, :name%>
+<br>
+<%= f.label :pizza %>
+<%= f.collection_select :pizza_id, @pizzas, :id, :name%>
+<br>
+<%= f.label :price %>
+<%= f.number_field :price%>
+
+<%= f.submit "Create New Pizza" %>
+
+<%end%>
