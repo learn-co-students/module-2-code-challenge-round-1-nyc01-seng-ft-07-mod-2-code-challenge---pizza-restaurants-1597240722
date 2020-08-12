@@ -1,0 +1,20 @@
+<h1>Restaurant and Pizza Association Form</h1>
+
+<% if flash[:user_error]%>
+    <% flash[:user_error].each do |error|%>
+    <p style='color: red;'><%= error %></p><br>
+    <% end %>
+<% end %>
+
+<%= form_for @restaurant_pizza do |f| %>
+    <label><b>Pizza Select:</b></label>
+    <%= f.collection_select :pizza_id, @pizzas, :id, :name %>
+    <br />
+    <label><b>Restaurant Select:</b></label>
+    <%= f.collection_select :restaurant_id, @restaurants, :id, :name %>
+    <br />
+    <label><b>Pizza Price: </b></label>
+    <%= f.number_field :price %>
+    <br />
+    <%= f.submit %>
+<% end %>
