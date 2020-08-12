@@ -1,0 +1,9 @@
+<h1><%= @restaurant.name %></h1>
+<h3><%= @restaurant.address %></h3>
+<hr>
+<h2>Our Pizzas:</h2>
+<ul>
+  <% @restaurant.restaurant_pizzas.each do |rest_pie| %>
+    <li><%= link_to rest_pie.pizza.name, pizza_path(rest_pie.pizza_id) %> - Price: $<%= rest_pie.price %></li><br>
+  <% end %>
+</ul>

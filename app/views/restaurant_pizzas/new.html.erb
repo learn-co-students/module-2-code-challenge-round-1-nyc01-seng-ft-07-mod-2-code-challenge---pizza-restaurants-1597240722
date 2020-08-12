@@ -1,0 +1,27 @@
+<%= form_for @restaurant_pizza do |f| %>
+  <% if @restaurant_pizza.errors.any? %>
+    <div id="error_explanation">
+      <h3><%= pluralize(@restaurant_pizza.errors.count, "error") %> prohibited this association from being saved:</h3>
+
+      <ul>
+      <% @restaurant_pizza.errors.full_messages.each do |msg| %>
+        <li><em><%= msg %></em></li>
+      <% end %>
+      </ul>
+    </div>
+    <hr>
+  <% end %>
+  <br><br>
+  <h1>Add a Pizza to your Menu!</h1>
+  <hr>
+  <%= f.label "Pizza:" %>
+  <%= f.collection_select :pizza_id, @pizzas, :id, :name %>
+  <br><br>
+  <%= f.label "Restaurant:"%>
+  <%= f.collection_select :restaurant_id, @restaurants, :id, :name %>
+  <br><br>
+  <%= f.label "Price:" %>
+  <%= f.number_field :price %>
+  <br><br>
+  <%= f.submit "Add Pizza to the Menu" %>
+<% end %>
