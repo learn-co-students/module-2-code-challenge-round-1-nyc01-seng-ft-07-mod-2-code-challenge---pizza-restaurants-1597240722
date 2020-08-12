@@ -8,7 +8,9 @@
 #
 #   1
 Restaurant.destroy_all
- 
+Pizza.destroy_all
+RestaurantPizza.destroy_all
+
 restaurants = [{
   name: "Sottocasa NYC",
   address: "298 Atlantic Ave, Brooklyn, NY 11201",
@@ -71,4 +73,8 @@ pizzas = [
 
 pizzas.each do |p|
   Pizza.create!(p)
+end
+
+10.times do
+  RestaurantPizza.create(price: rand(20) , pizza_id: Pizza.all.sample.id , restaurant_id: Restaurant.all.sample.id)
 end
