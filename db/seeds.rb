@@ -72,3 +72,19 @@ pizzas = [
 pizzas.each do |p|
   Pizza.create!(p)
 end
+
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
+RestaurantPizza.create(restaurant_id: rand(1..3), pizza_id: rand(1..10), price: rand(1..30))
