@@ -7,3 +7,6 @@
     <li><%=link_to pizza.name, pizza_path(pizza)%></li>
 <%end%>
 </ol>
+
+<h2>On average, our pizzas only cost: </h2>
+<p>$<%= @restaurant.average_pizza_price.round(2) %></p>

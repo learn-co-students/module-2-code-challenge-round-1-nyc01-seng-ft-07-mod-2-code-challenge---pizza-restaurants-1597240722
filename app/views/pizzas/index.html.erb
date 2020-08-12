@@ -2,7 +2,7 @@
 
 <% @pizzas.each do |pizza| %>
   <h1 style='font-size:1.5rem;margin-top:50px'>Pizza Name:
-      <%= pizza.name %>
+      <p><%= pizza.name %> -- Found at <%= pizza.restaurants.count%> <%= "restaurant".pluralize(pizza.restaurants.count)%> in your area</p>
   </h1>
   <p>Ingredients: <%= pizza.ingredients %></p>
 <% end %>
