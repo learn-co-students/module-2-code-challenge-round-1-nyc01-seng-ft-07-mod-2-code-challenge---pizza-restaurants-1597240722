@@ -8,3 +8,6 @@
     <li> <%= link_to pizza.name, pizza_path(pizza) %> </li>
 <% end %>
 </ul>
+
+<br />
+<p><b>Average price per pizza:</b> $<%= @restaurant.average_pizza_price %> </p>

@@ -102,20 +102,21 @@ Add validations to the RestaurantPizza model so that each RestaurantPizza must h
 
 ### 7. Advanced: Additional RestaurantPizza Validation
 
-A Pizza should only be associated with the same Restaurant once. (It wouldn't make sense for Pizza Hut to have Cheese Pizza listed on its menu twice!)
+<!-- A Pizza should only be associated with the same Restaurant once. (It wouldn't make sense for Pizza Hut to have Cheese Pizza listed on its menu twice!) -->
 
-Add a validation to RestaurantPizza to ensure that each Pizza can only appear once on the same Restaurant's menu.
-Update the error handling on the RestaurantPizza creation form to show this validation error.
+<!-- Add a validation to RestaurantPizza to ensure that each Pizza can only appear once on the same Restaurant's menu. -->
+
+<!-- Update the error handling on the RestaurantPizza creation form to show this validation error. -->
 
 ### 8. Advanced: Display Count of Restaurants on Pizza Index Page
 
-On the Pizza index page, display the number of Restaurants that have that Pizza next to each Pizza's name.
+<!-- On the Pizza index page, display the number of Restaurants that have that Pizza next to each Pizza's name. -->
 
 ### 9. Advanced: Restaurant Average Pizza Price
 
-Show the average price of a Pizza on the Restaurant show page. 
+<!-- Show the average price of a Pizza on the Restaurant show page.  -->
 
-To calculate the average, add up all of the Restaurant's Pizzas' prices, and then divide by the number of Pizzas.
+<!-- To calculate the average, add up all of the Restaurant's Pizzas' prices, and then divide by the number of Pizzas. -->
 
 ### Feature Demo
 

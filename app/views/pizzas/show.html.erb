@@ -1,3 +1,5 @@
 <h1> <%= @pizza.name %> </h1>
 
 <p><b>Ingredients:</b> <%= @pizza.ingredients %> </p>
+
+<p><b>This pizza can be found at</b> <%= "#{@pizza.restaurant_count}" %> <b><%= "#{"restaurant".pluralize(@pizza.restaurant_count)}" %>. </b></p>
