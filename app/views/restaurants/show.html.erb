@@ -1,7 +1,9 @@
 <h1><%= @restaurant.name %></h1>
-Address: <%= @restaurant.address %>
+Address: <%= @restaurant.address %><br>
+Average Pizza Price: <%= @restaurant.average_price %>
 <ul>
 Pizzas: <% @restaurant.pizzas.each do |pizza| %>
     <li><%= link_to pizza.name, pizza_path(pizza) %></li>
+    Price: <%= @restaurant.find_restaurant_pizza(pizza).price %>
 <% end %>
 </ul>
