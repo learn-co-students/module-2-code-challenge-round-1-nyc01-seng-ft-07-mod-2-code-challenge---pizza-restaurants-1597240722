@@ -1,0 +1,6 @@
+<h2><%= @restaurant.name %></h2>
+<h2><%= @restaurant.address %></h2>
+<h3>The average price of a pizza is: </h3>
+<% @restaurant.pizzas.each do |p| %>
+  <ul><%= link_to p.name, pizza_path(p) %></ul>
+  <%end%>
