@@ -5,9 +5,13 @@ class RestaurantPizza < ApplicationRecord
 
   validates :pizza, uniqueness: true
 
-  # def avg_price
-  #   RestaurantPizza.each do |price|
+  # def prices
+  #   total_price = RestaurantPizza.each do |price|
   #     price.
+  # end
+
+  # def avg_price
+  #   total_price
   #   end
   # end
 
