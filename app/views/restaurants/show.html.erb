@@ -1,0 +1,12 @@
+<h1>Restaurant Show Page</h1>
+
+<h3><label>Restaurant Name: </label><%= @restaurant.name%></h3>
+
+<h3><label>Restaurant Address: </label><%= @restaurant.address%></h3>
+
+<h3><label>Restaurant Pizzas: </label></h3>
+    <% @restaurant.pizzas.each do |pizza|%>
+        <p><%=pizza.name%></p>
+        <% end %>
+<br>
+<%= link_to 'Back To All Restaurants', restaurants_path %>
