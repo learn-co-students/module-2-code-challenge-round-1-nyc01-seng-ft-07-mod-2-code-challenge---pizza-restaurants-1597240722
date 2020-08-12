@@ -1,8 +1,4 @@
 class RestaurantPizzasController < ApplicationController
-    def index
-
-    end 
-    
     def new
         @restaurant_pizza = RestaurantPizza.new
     end 

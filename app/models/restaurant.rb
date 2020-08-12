@@ -8,7 +8,7 @@ class Restaurant < ApplicationRecord
     end
 
     def find_restaurant_pizza(pizza)
-        restaurant_pizza = RestaurantPizza.find_by(pizza: pizza, restaurant: self)
+        RestaurantPizza.find_by(pizza: pizza, restaurant: self)
     end
 end
 
