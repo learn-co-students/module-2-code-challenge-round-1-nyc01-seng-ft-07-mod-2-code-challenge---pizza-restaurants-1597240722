@@ -1,0 +1,24 @@
+<ul>
+    <% if flash[:errors] %>
+        <% flash[:errors].each do |error| %>
+            <li>
+                <%= error %>
+            </li>
+        <% end %>
+    <% end %>
+</ul><br>
+
+<h1>Menu Adder</h1>
+<%= form_for @restaurant_pizza do |f| %>
+    <%= f.label 'Select a Restaurant' %>
+    <%= f.collection_select :restaurant_id, @restaurants, :id, :name %>
+    <%= f.label 'Select a Pizza' %>
+    <%= f.collection_select :pizza_id, @pizzas, :id, :name %>
+    <%= f.label 'Specify Price' %>
+    <%= f.number_field :price %>
+    <%= f.submit %>
+<% end %>
+
+<br>
+<br>
+<%= link_to 'Cancel', restaurants_path %>

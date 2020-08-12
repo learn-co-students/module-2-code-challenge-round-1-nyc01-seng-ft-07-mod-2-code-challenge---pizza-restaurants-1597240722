@@ -2,7 +2,12 @@
 
 <% @restaurants.each do |restaurant| %>
   <h1 style='font-size:1.5rem;margin-top:50px'>Restaurant Name:
-      <%= restaurant.name %>
+      <%= link_to restaurant.name, restaurant_path(restaurant.id) %>
   </h1>
   <p>Address: <%= restaurant.address %></p>
 <% end %>
+
+
+<br>
+<br>
+<p><%= link_to 'Menu Adder', new_restaurant_pizza_path %></p>
