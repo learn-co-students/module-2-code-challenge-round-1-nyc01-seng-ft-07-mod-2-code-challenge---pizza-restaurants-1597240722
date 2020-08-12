@@ -5,4 +5,5 @@
       <%= link_to pizza.name, pizza_path(pizza) %>
   </h1>
   <p>Ingredients: <%= pizza.ingredients %></p>
+  <p>Number of Restaurants that serve this pizza: <%= pizza.restaurants.count %>
 <% end %>

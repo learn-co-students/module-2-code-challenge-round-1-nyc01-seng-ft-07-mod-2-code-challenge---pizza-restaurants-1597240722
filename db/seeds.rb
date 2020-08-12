@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 #
 #   1
-Restaurant.destroy_all
+# Restaurant.destroy_all
  
 restaurants = [{
   name: "Sottocasa NYC",
@@ -74,5 +74,5 @@ pizzas.each do |p|
 end
 
 20.times do 
-  RestaurantPizza.create(pizza: Pizza.all.sample, restaurant: Restaurant.all.sample)
+  RestaurantPizza.create(pizza: Pizza.all.sample, restaurant: Restaurant.all.sample, price: rand(0..30))
 end
