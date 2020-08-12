@@ -72,3 +72,7 @@ pizzas = [
 pizzas.each do |p|
   Pizza.create!(p)
 end
+
+10.times do 
+RestaurantPizza.create(pizza_id: Pizza.all.sample.id, restaurant_id: Restaurant.all.sample.id, price: rand(30))
+end 

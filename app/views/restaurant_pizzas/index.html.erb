@@ -1,0 +1,6 @@
+<h1>NYC Pizzas </h1>
+<p>(join class index)</p>
+
+<% @restaurant_pizzas.each do |join| %>
+<%= link_to join.id, restaurant_pizza_path(join)%>
+<%end%>
