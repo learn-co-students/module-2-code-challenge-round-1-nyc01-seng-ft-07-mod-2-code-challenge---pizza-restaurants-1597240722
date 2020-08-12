@@ -8,7 +8,6 @@ class RestaurantsController < ApplicationController
   def show
   end
 
-
   private
     
   def find_restaurant

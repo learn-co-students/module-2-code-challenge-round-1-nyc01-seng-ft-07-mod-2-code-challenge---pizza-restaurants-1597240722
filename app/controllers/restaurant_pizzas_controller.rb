@@ -2,7 +2,6 @@ class RestaurantPizzasController < ApplicationController
     
     def new
         @restaurant_pizza = RestaurantPizza.new
-
         @pizzas = Pizza.all
         @restaurants = Restaurant.all
     end

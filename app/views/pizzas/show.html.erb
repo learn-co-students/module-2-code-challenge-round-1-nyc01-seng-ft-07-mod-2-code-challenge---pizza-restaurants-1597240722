@@ -3,3 +3,11 @@
 <p><b>Ingredients:</b> <%= @pizza.ingredients %> </p>
 
 <p><b>This pizza can be found at</b> <%= "#{@pizza.restaurant_count}" %> <b><%= "#{"restaurant".pluralize(@pizza.restaurant_count)}" %>. </b></p>
+
+<b>Can be found at:</b>
+<br />
+<ul>
+    <% @pizza.restaurants.each do |restaurant| %>
+        <li> <%= link_to restaurant.name, restaurant_path(restaurant) %> </li>
+    <% end %>
+</ul>
