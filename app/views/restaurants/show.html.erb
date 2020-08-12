@@ -4,11 +4,12 @@
 
 <h3>
 Our Pizza list:
+Average Price: <%=@restaurant.branches.map{|p|p.price}.sum/(@restaurant.branches.length)%>
 <ul>
     <%@restaurant.branches.each do |b|%><br><br>
     Name: <li><%= link_to b.pizza.name, pizza_path(b.pizza) %> <br>
-    Our Price: <%=b.price%></li>
-    Average Price: <%%>
+    Our Price: <%=b.price%>
+    </li>
     <%end%>
 </ul>
 <h3>
