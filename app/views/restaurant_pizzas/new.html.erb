@@ -1,0 +1,13 @@
+
+<%form_for @restaurant_pizza do |f|%>
+<%=f.label "Pizza:"%>
+<%=f.collection_select :pizza_id, @restaurant_pizzas, :id, :name%>
+
+<%=f.labal "Restaurant:"%>
+<%=f.collection_select :restaurant_id, @restaurant_pizzas, :id, :name%>
+
+<%=f.labal "price:"%>
+<%-f.number_field :price%>
+
+<%=f.submit %>
+<%%>

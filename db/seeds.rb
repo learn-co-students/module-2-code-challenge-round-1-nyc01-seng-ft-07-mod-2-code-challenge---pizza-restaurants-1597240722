@@ -69,6 +69,23 @@ pizzas = [
   }
 ]
 
+
+
 pizzas.each do |p|
   Pizza.create!(p)
 end
+
+
+pizza1 = Pizza.create(name: "Veggie", ingredients: "Dough, Sauce, Cheese, Red Peppers, Green Peppers, Onions, Mushrooms")
+pizza2 = Pizza.create(  name: "Frutti di mare",ingredients: "Dough, Sauce, Cheese, Tuna, Shrimp, Mussels")
+
+rest1 = Restaurant.create(  name: "Sottocasa NYC",
+address: "298 Atlantic Ave, Brooklyn, NY 11201")
+rest2 = Restaurant.create(  name: "PizzArte",
+address: "69 W 55th St, New York, NY 10019")
+
+
+
+RestaurantPizza.destroy_all
+ 
+rp1 = RestaurantPizza.create(restaurant_id: rest1.id, pizza_id: pizza1.id)
