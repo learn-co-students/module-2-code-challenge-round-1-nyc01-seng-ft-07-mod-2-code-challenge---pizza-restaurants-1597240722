@@ -2,7 +2,7 @@
 
 <% @pizzas.each do |pizza| %>
   <h1 style='font-size:1.5rem;margin-top:50px'>Pizza Name:
-      <%= pizza.name %>
+      <%= pizza.name + " | Restaurants That Have This Pizza: " + "#{pizza.restaurant_count}" %>
   </h1>
   <p>Ingredients: <%= pizza.ingredients %></p>
 <% end %>
