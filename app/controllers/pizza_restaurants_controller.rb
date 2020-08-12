@@ -6,9 +6,9 @@ class PizzaRestaurantsController < ApplicationController
     def create
         @pizza_restaurant = PizzaRestaurant.create(pizza_restaurant_params)
 
-        redirect_to restaurant_path(pizza_restaurant)
+        redirect_to restaurant_path(@pizza_restaurant)
     end
-    
+
      # def create
     #     @pizza_restaurant = PizzaRestaurant.create(pizza_restaurant_params)
     #     if artist.valid?
