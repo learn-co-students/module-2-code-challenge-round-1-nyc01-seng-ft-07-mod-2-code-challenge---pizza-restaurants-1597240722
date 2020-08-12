@@ -7,7 +7,7 @@ end
 def create 
     @restaurant_pizza= RestaurantPizza.create(restaurant_pizza_params)
     #redirect_to restaurant_path(restaurant_pizza.restaurant)
-    if @restaurant_pizza valid?
+    if @restaurant_pizza.valid?
 
      redirect_to restaurant_path(restaurant_pizza.restaurant.id)
     
