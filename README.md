@@ -53,26 +53,26 @@ Update the code of the application to meet the following deliverables. Follow RE
 
 ***Read through these deliverables carefully to understand the requirements for this code challenge. Tackle them one by one, as they build on each other sequentially.***
 
-### 1. Create the RestaurantPizza Association
+<!-- ### 1. Create the RestaurantPizza Association
 
 Each Restaurant can have many Pizzas and each Pizza can belong to multiple Restaurants. Each Restaurant can set the price of a Pizza to an integer. Update the schema and models to create the RestaurantPizza relationship so that:
 
 - A Pizza can be sold at many Restaurants
 - A Restaurant can sell many Pizzas
 - RestaurantPizza stores an integer price for each pizza (Remember, each Restaurant can choose how to price its own Pizzas)
-
+<!-- 
 ### 2. Pizza Show Page
 
-There should be a show page for each Pizza. It should display the name and ingredients.
+There should be a show page for each Pizza. It should display the name and ingredients. --> -->
 
-### 3. Restaurant Show Page
+<!-- ### 3. Restaurant Show Page
 
 There should be a show page for each Restaurant. It should include:
 
 - the Restaurant's name and address
 - a list of the Pizzas it sells
 
-Each pizza in the list should link to that Pizza's show page.
+Each pizza in the list should link to that Pizza's show page. -->
 
 ### 4. Restaurants Index Page Links
 
