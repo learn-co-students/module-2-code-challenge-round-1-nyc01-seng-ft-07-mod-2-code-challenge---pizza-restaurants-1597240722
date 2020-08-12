@@ -5,14 +5,14 @@ def new
 end
 
 def create
-    @restaurant_pizza = RestuarantPizza.create(restaurant_pizza_params)
+    @restaurant_pizza = RestaurantPizza.create(restaurant_pizza_params)
     redirect_to restaurant_path([@restaurant_pizza.restaurant.id]) 
 end
 
 
 private
 def restaurant_pizza_params
-    params.require(:restaurant).permit(:pizza_id, :restaurant_id, :price)
+    params.require(:restaurant_pizza).permit(:pizza_id, :restaurant_id, :price)
 end
 
 

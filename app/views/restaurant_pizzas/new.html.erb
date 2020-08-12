@@ -8,7 +8,9 @@
     <%= f.collection_select :pizza_id, Pizza.all, :id, :name %>
     
     <%=f.label :price %>
-    <%= f.number_field :price, in: 10..25 %>
+    <%= f.number_field :price, in: 0..100 %>
 
     <%= f.submit %>
+
+
 <% end %>
