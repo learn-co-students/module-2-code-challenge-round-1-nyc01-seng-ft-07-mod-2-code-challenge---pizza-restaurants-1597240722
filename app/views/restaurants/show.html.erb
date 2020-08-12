@@ -3,7 +3,11 @@
 
 <h2>Available Pizzas:</h2>
 <ul>
+<% total = 0.0 %>
 <% @restaurant.restaurant_pizzas.each do |location| %>
   <li> <%= link_to location.pizza.name, pizza_path(location.pizza) %> - Price: <%= location.price%></li>
+        <%  total += location.price%>
   <% end%>
+<p>
+  <h4>Average price for pizza: $<%= total/@restaurant.pizzas.count.to_f %></h4>
   </ul>
