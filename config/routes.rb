@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
-  get '/restaurants', to: 'restaurants#index'
-  get '/pizzas', to: 'pizzas#index'
+  resources :restaurant_pizzas
+  resources :restaurants
+  resources :pizzas
+  # get '/restaurants', to: 'restaurants#index'
+  # get '/pizzas', to: 'pizzas#index'
+  # get '/restaurants', to: 'restaurants#show'
+  # get '/pizzas', to: 'pizzas#show'
 end

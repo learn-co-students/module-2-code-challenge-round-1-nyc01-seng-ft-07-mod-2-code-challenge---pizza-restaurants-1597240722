@@ -8,6 +8,8 @@
 #
 #   1
 Restaurant.destroy_all
+Pizza.destroy_all
+RestaurantPizza.destroy_all
  
 restaurants = [{
   name: "Sottocasa NYC",
@@ -72,3 +74,17 @@ pizzas = [
 pizzas.each do |p|
   Pizza.create!(p)
 end
+
+
+RestaurantPizza.create(restaurant_id: Restaurant.all.sample.id, pizza_id: Pizza.all.sample.id, price: 20)
+RestaurantPizza.create(restaurant_id: Restaurant.all.sample.id, pizza_id: Pizza.all.sample.id, price: 10)
+RestaurantPizza.create(restaurant_id: Restaurant.all.sample.id, pizza_id: Pizza.all.sample.id, price: 15)
+RestaurantPizza.create(restaurant_id: Restaurant.all.sample.id, pizza_id: Pizza.all.sample.id, price: 22)
+RestaurantPizza.create(restaurant_id: Restaurant.all.sample.id, pizza_id: Pizza.all.sample.id, price: 25)
+RestaurantPizza.create(restaurant_id: Restaurant.all.sample.id, pizza_id: Pizza.all.sample.id, price: 21)
+RestaurantPizza.create(restaurant_id: Restaurant.all.sample.id, pizza_id: Pizza.all.sample.id, price: 30)
+RestaurantPizza.create(restaurant_id: Restaurant.all.sample.id, pizza_id: Pizza.all.sample.id, price: 34)
+RestaurantPizza.create(restaurant_id: Restaurant.all.sample.id, pizza_id: Pizza.all.sample.id, price: 35)
+RestaurantPizza.create(restaurant_id: Restaurant.all.sample.id, pizza_id: Pizza.all.sample.id, price: 40)
+RestaurantPizza.create(restaurant_id: Restaurant.all.sample.id, pizza_id: Pizza.all.sample.id, price: 50)
+RestaurantPizza.create(restaurant_id: Restaurant.all.sample.id, pizza_id: Pizza.all.sample.id, price: 60)

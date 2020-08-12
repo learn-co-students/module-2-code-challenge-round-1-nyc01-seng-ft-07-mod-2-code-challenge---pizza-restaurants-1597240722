@@ -1,0 +1,13 @@
+<h1> Restaurant_Pizza New Form </h1>
+
+<%= form_for @restaurant_pizza do |f| %>
+
+<%= f.collection_select :restaurant_id, Restaurant.all, :id, :name %>
+
+<%= f.collection_select :pizza_id, Pizza.all, :id, :name %>
+
+<%= f.number_field(:price, in: 1..30) %>
+
+<%= f.submit %>
+
+<% end %>
