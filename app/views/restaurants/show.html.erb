@@ -1,0 +1,20 @@
+<h1><%=@restaurant.name%>'s Profile Page</h1>
+
+<br>Name:
+<br><%= @restaurant.name %><br>
+
+<br><p>Address:</p><p><%= @restaurant.address %></p>
+
+<p>Pizzas Sold Here:</p>
+
+<ol>
+<% @restaurant.pizzas.each do |pizza| %>
+    <li><%= link_to pizza.name, pizza_path(pizza) %></li>
+<% end %>
+</ol>
+<br>
+<p>Average Price of Pizzas Sold Here:</p>
+
+$<%= @restaurant.average_price %>
+
+
