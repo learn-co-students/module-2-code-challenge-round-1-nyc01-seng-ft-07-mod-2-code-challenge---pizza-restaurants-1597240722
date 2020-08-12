@@ -5,8 +5,9 @@
 <h3><label>Restaurant Address: </label><%= @restaurant.address%></h3>
 
 <h3><label>Restaurant Pizzas: </label></h3>
-    <% @restaurant.pizzas.each do |pizza|%>
+    <% @restaurant.pizzas.uniq.each do |pizza|%>
         <p><%=pizza.name%></p>
         <% end %>
 <br>
+
 <%= link_to 'Back To All Restaurants', restaurants_path %>
