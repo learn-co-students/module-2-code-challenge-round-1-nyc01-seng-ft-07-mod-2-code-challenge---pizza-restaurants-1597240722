@@ -8,3 +8,5 @@
     <li><%= link_to pizza.name, pizza_path(pizza) %></li>
   <% end %>
 </ul>
+
+<p>Average Price: <%= number_to_currency(@restaurant.average_pizza_price) %></p>
