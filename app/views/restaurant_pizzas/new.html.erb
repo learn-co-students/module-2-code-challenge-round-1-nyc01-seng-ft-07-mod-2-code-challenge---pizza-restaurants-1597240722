@@ -1,0 +1,21 @@
+<h1>New Association</h1>
+
+<% if flash[:errors] %>
+<% flash[:errors].each do |error| %>
+    <p><%= error %></p>
+    <% end %>
+<% end %>
+
+<%= form_for @restaurant_pizza do |f| %>
+<%= f.label :pizza_id %>
+<%= f.collection_select :pizza_id, Pizza.all, :id, :name %><br>
+
+<%= f.label :restaurant_id %>
+<%= f.collection_select :restaurant_id, Restaurant.all, :id, :name %><br>
+
+<%= f.label :price %>
+<%= f.number_field :price %><br>
+
+<%= f.submit %>
+
+<% end %>
