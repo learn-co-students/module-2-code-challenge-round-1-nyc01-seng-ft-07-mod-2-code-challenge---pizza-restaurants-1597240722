@@ -2,6 +2,15 @@
 
 <%= @restaurant.name %><br>
 <%= @restaurant.address %><br><br>
+
+Average price of Pizzas here:
+<% avg = 0 %>
+<% @restaurant.restaurant_pizzas.each do |pie| %>
+<% avg += pie.price %>
+<% end %>
+$<%= avg / @restaurant.pizzas.count %>
+<br><br>
+
 Pizzas:<br>
 <% @restaurant.pizzas.each do |f| %>
 <%= link_to f.name, pizza_path(f) %><br>
