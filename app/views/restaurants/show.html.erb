@@ -8,3 +8,6 @@
 <% @restaurant.pizzas.each do |pizza| %>
     <p><%= link_to pizza.name, pizza %> </p>
 <% end %>
+
+<h3>Average Pizza Price</h3>
+<p><%= @average_pizza_price%> </p>
