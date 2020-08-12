@@ -5,6 +5,8 @@
 <h3>
 Our Pizza list:
 <ul>
-<li></li>
+    <%@restaurant.branches.each do |b|%><br><br>
+    Name: <li><%= link_to b.pizza.name, pizza_path(b.pizza) %> Price: <%=b.price%></li>
+    <%end%>
 </ul>
 <h3>
