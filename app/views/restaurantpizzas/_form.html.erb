@@ -1,0 +1,19 @@
+
+
+<%= form_for @restaurantpizza do |f| %>
+    <%= f.label :Pizza %>
+    <%= f.collection_select :name, @pizzas, :id, :name %>
+
+    <%= f.label :Restaurant %>
+    <%= f.collection_select :name, @restaurants, :id, :name %>
+
+    <%= f.label :Price %>
+    <%= f.number_field :Price %>
+
+    <%= button_to 'save' %>
+
+    <%= f.submit %>
+
+    <% redirect_to restaurant_path %>
+
+    <% end %>

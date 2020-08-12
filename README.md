@@ -31,7 +31,7 @@ Once you have followed the setup instructions above, visiting the `/restaurants`
 
 ***Schema***
 
-Restaurant
+Restaurant 
 
 | Column | Type |
 | ------------- | ------------- |

@@ -72,3 +72,7 @@ pizzas = [
 pizzas.each do |p|
   Pizza.create!(p)
 end
+
+
+# 5.times do
+#   Restaurantpizza.create
